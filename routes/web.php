@@ -11,6 +11,12 @@
 |
 */
 
+use App\Http\Controllers\DaskomController;
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home0293');
 });
+
+Route::get('/article', [DaskomController::class, 'article']);
+
+Route::get('/contact', [DaskomController::class, 'contact']);
